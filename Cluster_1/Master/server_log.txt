@@ -1,0 +1,112 @@
+[00:00:01]: PersistRootStorage is now /home/dst/Klei//DoNotStarveTogether/Cluster_1/Master/ 
+[00:00:01]: Starting Up
+[00:00:01]: Version: 478130
+[00:00:01]: Current time: Sat Sep 11 23:54:04 2021
+
+[00:00:01]: System Name: Linux
+[00:00:01]: Host Name: ubuntu
+[00:00:01]: Release(Kernel) Version: 5.11.0-34-generic
+[00:00:01]: Kernel Build Timestamp: #36~20.04.1-Ubuntu SMP Fri Aug 27 08:06:32 UTC 2021
+[00:00:01]: Machine Arch: x86_64
+[00:00:01]: Don't Starve Together: 478130 LINUX
+[00:00:01]: Build Date: 7229
+[00:00:01]: Mode: 32-bit
+[00:00:01]: Parsing command line
+[00:00:01]: Command Line Arguments: - -persistent_storage_root /home/dst/Klei -console -shard Master 
+[00:00:01]: [WARNING] -console has been deprecated: Use the [MISC] / console_enabled setting instead.
+[00:00:01]: Initializing distribution platform
+[00:00:01]: ....Done
+[00:00:01]: THREAD - started 'GAClient' (4131519296)
+[00:00:01]: CurlRequestManager::ClientThread::Main()
+[00:00:01]: Mounting file system databundles/klump.zip successful.
+[00:00:01]: Mounting file system databundles/shaders.zip successful.
+[00:00:01]: Mounting file system databundles/fonts.zip successful.
+[00:00:01]: Mounting file system databundles/anim_dynamic.zip successful.
+[00:00:01]: Mounting file system databundles/bigportraits.zip successful.
+[00:00:01]: Mounting file system databundles/images.zip successful.
+[00:00:01]: Mounting file system databundles/scripts.zip successful.
+[00:00:01]: [Steam] SteamGameServer_Init(10999, 27016)
+[00:00:02]: [Steam] SteamGameServer_Init success
+[00:00:02]: ProfileIndex:6.31
+[00:00:02]: [Connect] PendingConnection::Reset(true)
+[00:00:02]: THREAD - started 'Ping Job Thread' (4072663872)
+[00:00:02]: Platform: 1
+[00:00:02]: Network tick rate: U=15(2), D=0
+[00:00:02]: Network tick rate: U=15(2), D=0
+[00:00:02]: Error trying to change cluster setting (NETWORK->cluster_intention) from '' to 'cooperative'
+[00:00:02]: THREAD - started 'StreamInput' (4070562624)
+[00:00:02]: OnLoadPermissionList: /home/dst/Klei//DoNotStarveTogether/Cluster_1/blocklist.txt (Failure)
+[00:00:02]: OnLoadPermissionList: /home/dst/Klei//DoNotStarveTogether/Cluster_1/adminlist.txt (Failure)
+[00:00:02]: OnLoadUserIdList: /home/dst/Klei//DoNotStarveTogether/Cluster_1/whitelist.txt (Failure)
+[00:00:02]: Token file not found: /home/dst/Klei//DoNotStarveTogether/Cluster_1/cluster_token.txt, success: F, len: 0
+[00:00:02]: Token file not found: /home/dst/Klei//DoNotStarveTogether/Cluster_1/cluster_token.txt, success: F, len: 0
+[00:00:02]: cGame::InitializeOnMainThread
+[00:00:02]: Renderer initialize: Okay
+[00:00:02]: AnimManager initialize: Okay
+[00:00:02]: Buffers initialize: Okay
+[00:00:02]: cDontStarveGame::DoGameSpecificInitialize()
+[00:00:02]: GameSpecific initialize: Okay
+[00:00:02]: cGame::StartPlaying
+[00:00:02]: AppVersion::GetArchitecture() x32
+[00:00:02]: LOADING LUA
+[00:00:02]: DoLuaFile scripts/main.lua
+[00:00:02]: DoLuaFile loading buffer scripts/main.lua
+[00:00:03]:   taskgrouplist:	default	Together	
+[00:00:03]:   taskgrouplist:	classic	Classic	
+[00:00:03]:   taskgrouplist:	cave_default	Underground	
+[00:00:03]:   taskgrouplist:	lavaarena_taskset	The Forge	
+[00:00:03]:   taskgrouplist:	quagmire_taskset	The Gorge	
+[00:00:03]: running main.lua
+	
+[00:00:03]: Could not load modindex	
+[00:00:03]: ModIndex: Beginning normal load sequence for dedicated server.
+	
+[00:00:03]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:00:06]: LOADING LUA SUCCESS
+[00:00:06]: PlayerDeaths could not load morgue	
+[00:00:06]: PlayerHistory could not load player_history	
+[00:00:06]: ServerPreferences could not load server_preferences	
+[00:00:06]: bloom_enabled	true	
+[00:00:06]: OnFilesLoaded()	
+[00:00:06]: OnUpdatePurchaseStateComplete	
+[00:00:06]: Klump load on boot started.	
+[00:00:06]: Klump files loaded: 	0	
+[00:00:08]: 	Load FE	
+[00:00:11]: 	Load FE: done	
+[00:00:11]: THREAD - started 'FilesExistAsyncThread' (4040440640)
+[00:00:11]: FilesExistAsyncThread started (18458 files)...
+[00:00:11]: Check for write access: TRUE
+[00:00:11]: Check for read access: TRUE
+[00:00:11]: Available disk space for save files: 14271 MB
+[00:00:11]: ModIndex: Load sequence finished successfully.	
+[00:00:11]: Reset() returning
+[00:00:12]: [200] Account Failed (6): "E_INVALID_TOKEN"
+[00:00:12]: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[00:00:12]: !!!! Your Server Will Not Start !!!!
+[00:00:12]: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[00:00:12]: No auth token could be found.
+[00:00:12]: Please visit https://accounts.klei.com/account/game/servers?game=DontStarveTogether
+[00:00:12]: to generate server configuration files
+[00:00:12]: 
+[00:00:12]: Alternatively generate a cluster_token you can
+[00:00:12]: open the console from a logged-in game
+[00:00:12]: client with the tilda key (~ / ù) and type:
+[00:00:12]: TheNet:GenerateClusterToken()
+[00:00:12]: This will create 'cluster_token.txt' in
+[00:00:12]: your client settings directory. Copy this
+[00:00:12]: into your cluster settings directory.
+[00:00:12]: [Connect] PendingConnection::Reset(true)
+[00:00:37]: ... FilesExistAsyncThread complete
+[00:01:02]: Collecting garbage...
+[00:01:02]: lua_gc took 0.07 seconds
+[00:01:02]: ~ShardLuaProxy()
+[00:01:02]: ~cEventLeaderboardProxy()
+[00:01:02]: ~ItemServerLuaProxy()
+[00:01:02]: ~InventoryLuaProxy()
+[00:01:02]: ~NetworkLuaProxy()
+[00:01:02]: ~SimLuaProxy()
+[00:01:02]: lua_close took 0.09 seconds
+[00:01:02]: Orphaned unnamed resource. This resource must have used Add( resource ) to insert itself into the manager. 
+[00:01:02]: CurlRequestManager::ClientThread::Main() complete
+[00:01:02]: HttpClient2 discarded 0 callbacks.
+[00:01:03]: Shutting down

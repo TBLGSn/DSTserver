@@ -57,7 +57,7 @@ chmod u+x restart2.sh restart.sh start.sh start2.sh update.sh real_start.sh menu
 # 8.运行脚本,这会这 /home/dst/Klei/DoNotStarveTogether 下生成名为“Cluster_1”的存档
 ./real_start.sh
 #6. 移动令牌，这里用的是我的令牌
-mv DSTserver/cluster_token.txt /home/dst/Klei/DoNotStarveTogether/Cluster_1/
+mv -f DSTserver/Cluster_1/cluster_token.txt /home/dst/Klei/DoNotStarveTogether/Cluster_1/
 # 7.世界配置文件
 mv -f DSTserver/Cluster_1/Master/* /home/dst/Klei/DoNotStarveTogether/Cluster_1/Master/
 mv -f DSTserver/Cluster_1/Caves/* /home/dst/Klei/DoNotStarveTogether/Cluster_1/Caves/

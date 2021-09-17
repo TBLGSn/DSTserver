@@ -53,6 +53,7 @@ function main_menu() {
         select option in  "安装服务器" "运行服务器" "重启服务器" "停止服务器" "管理存档" "管理mod" "任意键退出"
         do
             case $option in
+            "安装服务器") install;;
             "运行服务器") start_server;;
             "重启服务器") restart_server;;
             "停止服务器") stop_server;;

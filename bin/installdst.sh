@@ -33,7 +33,9 @@ echo y | apt-get install screen
 echo y | apt-get install htop  # 停止服务器时使用
 echo y | apt-get install git
 # 4. 添加用户(/home/dst 密码为123456)
-useradd -p -123456 -s /bin/bash -ou 0 -g 0 -d /home/dst -m dst 
+# useradd -p -123456 -s /bin/bash -ou 0 -g 0 -d /home/dst -m dst 
+adduser blog
+su - blog
 Printf_Green "添加用户成功"
 # 5.登陆用户，并下载SteamCMD
 Printf_Green "下载SteamCMD"

@@ -1,4 +1,10 @@
 #!/bin/bash
+###
+ # @Author: tblgsn
+ # @Date: 2022-03-02 13:20:04
+ # @Description: 
+ # @FilePath: \DSTserver\bin\menu.sh
+### 
 # 0. 安装服务器
 install() {
     chmod u+x installdst.sh # 添加运行权限
@@ -51,10 +57,20 @@ uninstall() {
 # 6.blocklist.txt (重启生效)
 # 7.添加mods
 addmods(){
-    mkdir "Don't Starve Together"
-    cd  Don\'t\ Starve\ Together/ || Printf_RED "进入Don\'t\ Starve\ Together错误"
-    mkdir mods && touch dedicated_server_mods_setup.lua
-    echo 'ServerModSetup("1378549454")' >> dedicated_server_mods_setup.lua
+    echo '请输入需要的 modid（ 各id间使用,分隔 eg. 374550642,378160973,375850593,458587300,375859599 ） :'
+    read modid_list
+    echo ' return {' > /home/dst/Klei/DoNotStarveTogether/Cluster_1/Master/modoverrides.lua
+    echo ' return {' > /home/dst/Klei/DoNotStarveTogether/Cluster_1/Caves/modoverrides.lua
+    if [[ $modid_list != '' ]]; then
+        IFS=',' mod_list=($modid_list)
+        for mod_id in ${mod_list[@]}; do
+            echo "ServerModSetup(\"$mod_id\")" >> /home/dst/server_dst/mods/dedicated_server_mods_setup.lua
+            echo "[\"workshop-$mod_id\"] = { enabled = true }," >> /home/dst/Klei/DoNotStarveTogether/Cluster_1/Master/modoverrides.lua
+            echo "[\"workshop-$mod_id\"] = { enabled = true }," >> /home/dst/Klei/DoNotStarveTogether/Cluster_1/Caves/modoverrides.lua
+        done
+    fi
+     echo ' }' > /home/dst/Klei/DoNotStarveTogether/Cluster_1/Master/modoverrides.lua
+    echo ' }' > /home/dst/Klei/DoNotStarveTogether/Cluster_1/Caves/modoverrides.lua
 }
 # 0. 主菜单
 
@@ -71,6 +87,7 @@ function main_menu() {
             "重启服务器") restart_server;;
             "停止服务器") stop_server;;
             "管理存档") break;;
+            "管理mod" addmods;;
             *)
                 clear
                 exit

@@ -69,8 +69,8 @@ addmods(){
             echo "[\"workshop-$mod_id\"] = { enabled = true }," >> /home/dst/Klei/DoNotStarveTogether/Cluster_1/Caves/modoverrides.lua
         done
     fi
-     echo ' }' > /home/dst/Klei/DoNotStarveTogether/Cluster_1/Master/modoverrides.lua
-    echo ' }' > /home/dst/Klei/DoNotStarveTogether/Cluster_1/Caves/modoverrides.lua
+    echo ' }' >> /home/dst/Klei/DoNotStarveTogether/Cluster_1/Master/modoverrides.lua
+    echo ' }' >> /home/dst/Klei/DoNotStarveTogether/Cluster_1/Caves/modoverrides.lua
 }
 # 0. 主菜单
 
@@ -87,7 +87,7 @@ function main_menu() {
             "重启服务器") restart_server;;
             "停止服务器") stop_server;;
             "管理存档") break;;
-            "管理mod" addmods;;
+            "管理mod") addmods;;
             *)
                 clear
                 exit

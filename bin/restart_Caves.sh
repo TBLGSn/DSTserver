@@ -5,7 +5,7 @@
 name_folder="/home/dst/server_dst/bin"
 
 #Command line
-start_cave="sh start2.sh"
+start_cave="sh start_Caves.sh"
 
 #Start or Restart the server
 screen -dr dst_server2 -X -S quit

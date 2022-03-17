@@ -1,8 +1,9 @@
 #!/bin/sh
 # launch of server Cave
+source functions.sh
 
 #Path Directory
-name_folder="/home/dst/server_dst/bin"
+name_folder="$SERVER_DST_BIN"
 
 #Command line
 start_cave="sh start_Caves.sh"

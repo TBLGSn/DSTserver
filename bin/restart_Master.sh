@@ -1,8 +1,10 @@
 #!/bin/sh
 # launch of server Overworld
 
+source functions.sh
+
 #Path Directory
-name_folder="/home/dst/server_dst/bin"
+name_folder="$SERVER_DST_BIN"
 
 #Command line
 start_overworld="sh start_Master.sh"

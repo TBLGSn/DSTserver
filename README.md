@@ -10,3 +10,10 @@ bash dst.sh
 ```shell
 bash /home/dst/server_dst/bin/menu.sh
 ```
+
+### FN
+- [x] 启动服务器
+- [x] mods  管理
+- [ ] 存档管理
+- [ ] 同时启动多个服务器 
+- [ ] 创建世界时可以设置世界

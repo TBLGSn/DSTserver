@@ -55,7 +55,8 @@ mkdir -p server_dst
 
 # 5.在 server_dst 目录下新建脚本,并添加权限
 Printf_Green "在server_dst目录下新建脚本"
-git clone https://github.com/TBLGSn/DSTserver.git
+#git clone https://github.com/TBLGSn/DSTserver.git
+git clone https://gitee.com/TBLGSn/DSTserver.git
 mv DSTserver/bin/* $SERVER_DST_BIN
 
 cd $SERVER_DST_BIN || Printf_RED "进入server_dst/bin发生错误"

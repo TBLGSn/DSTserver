@@ -1,17 +1,20 @@
 # DSTserver
 Don't Starve Together 脚本
+## 服务器配置
+> 脚本在ubuntu 18.0.4 服务器上测试通过
+
 ## Usage
-### 0. 安装 DST
+### 安装 DST
 ```shell
 wget "https://raw.githubusercontent.com/TBLGSn/DSTserver/main/dst.sh" && chmod u+x dst.sh
 bash dst.sh
 ```
-### 1. 管理服务器
+### 管理服务器
 ```shell
 bash /home/dst/server_dst/bin/menu.sh
 ```
 
-### FN
+## FN
 - [x] 服务器状态管理
 - [x] mods  管理
 - [ ] 存档管理

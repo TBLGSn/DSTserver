@@ -5,11 +5,10 @@
  # @Description: 
  # @FilePath: \DSTserver\bin\menu.sh
 ### 
-source functions.sh
+source ./functions.sh
 # 0. 安装服务器
 install() {
-    chmod u+x installdst.sh # 添加运行权限
-    bash installdst.sh 
+    bash install.sh 
 }
 # 1. 当前服务器状态（测试 所有服务器）
 verity_status(){

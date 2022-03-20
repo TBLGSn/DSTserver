@@ -95,11 +95,11 @@ addmods(){
 
 
 deletemods(){
-    echo  "输入删除的mods号"
-    read -r delete_name
-    cat "$SERVER_DST/mods/dedicated_server_mods_setup.lua" | grep -v "ServerModSetup(\"$delete_name\")" > temp.lua
+    read -r -p "输入删除的mods号:" delete_name
     touch temp.lua
-    cat temp.lua > a.lua
+    cat "$SERVER_DST/mods/dedicated_server_mods_setup.lua" | grep -v "ServerModSetup(\"$delete_name\")" > temp.lua
+    
+    cat temp.lua > "$SERVER_DST/mods/dedicated_server_mods_setup.lua"
     rm -rf temp.lua
 }
 showmods(){
@@ -112,8 +112,9 @@ showmods(){
     done
 }
 mods(){
+    clear
     while true
-
+    
     do    
         echo   "Mods 管理模块"
         echo -en "1)添加mods"
@@ -154,5 +155,5 @@ function main_menu() {
     done
 }
 
-
+clear
 main_menu

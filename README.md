@@ -5,9 +5,12 @@ Don't Starve Together 脚本
 
 ## Usage
 ### 安装 DST
+
 ```shell
 wget "https://raw.githubusercontent.com/TBLGSn/DSTserver/main/dst.sh" && chmod u+x dst.sh
 bash dst.sh
+或者 从gitee 下载
+wget "https://gitee.com/TBLGSn/DSTserver/raw/main/dst.sh" && chmod u+x dst.sh
 ```
 ### 管理服务器
 ```shell

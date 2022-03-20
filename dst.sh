@@ -15,4 +15,4 @@ cd /home/dst && git clone https://gitee.com/TBLGSn/DSTserver.git
 # 移动脚本文件 至规定的地点
 mv DSTserver/bin/* /home/dst/server_dst/bin
 chmod 777 /home/dst/server_dst/bin/*
-echo "请运行菜单界面"
+bash /home/dst/server_dst/bin/menu.sh

@@ -16,5 +16,5 @@ git clone https://gitee.com/TBLGSn/DSTserver.git
 
 # 移动脚本文件 至规定的地点
 mv DSTserver/bin/* /home/dst/server_dst/bin
-
-bash /home/dst/server_dst/bash/install.sh
+chmod 777 /home/dst/server_dst/bin/*
+bash /home/dst/server_dst/bin/install.sh

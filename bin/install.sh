@@ -50,7 +50,7 @@ fi
 # mv DSTserver/bin/* $SERVER_DST_BIN
 
 cd $SERVER_DST_BIN || Printf_RED "进入server_dst/bin发生错误" exit
-chmod u+x *
+# chmod u+x *
 
 # 7.运行脚本,这会这 /home/dst/Klei/DoNotStarveTogether 下生成名为“Cluster_1”的存档
 #./real_start.sh

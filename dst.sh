@@ -59,11 +59,13 @@ Printf_Green "在server_dst目录下新建脚本"
 git clone https://gitee.com/TBLGSn/DSTserver.git
 mv DSTserver/bin/* $SERVER_DST_BIN
 
-cd $SERVER_DST_BIN || Printf_RED "进入server_dst/bin发生错误"
+cd $SERVER_DST_BIN || Printf_RED "进入server_dst/bin发生错误" exit
 chmod u+x *
 
 # 7.运行脚本,这会这 /home/dst/Klei/DoNotStarveTogether 下生成名为“Cluster_1”的存档
-./real_start.sh
+#./real_start.sh
+mkdir -p  $DONOTSTARVE_DIR/Cluster_1/Caves
+mkdir -p  $DONOTSTARVE_DIR/Cluster_1/Master
 
 # 8.添加令牌
 echo "请输入你的token( Server Token )："

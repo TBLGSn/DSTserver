@@ -5,10 +5,10 @@
  # @Description: 
  # @FilePath: \DSTserver\bin\menu.sh
 ### 
-source ./functions.sh
+source /home/dst/server_dst/bin/functions.sh
 # 0. 安装服务器
 install() {
-    bash install.sh 
+    bash "$SERVER_DST_BIN/install.sh"
 }
 # 1. 当前服务器状态（测试 所有服务器）
 verity_status(){

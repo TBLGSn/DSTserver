@@ -1,7 +1,7 @@
 #!/bin/sh
 # launch of server Overworld
 
-source functions.sh
+source /home/dst/server_dst/bin/functions.sh
 
 #Path Directory
 name_folder="$SERVER_DST_BIN"

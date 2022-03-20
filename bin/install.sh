@@ -6,7 +6,7 @@
  # @FilePath: \DSTserver\bin\installdst.sh
 ### 
 
-source ./functions.sh
+source /home/dst/server_dst/bin/functions.sh
 
 #############################################################################
 ###############################MAIN##########################################
